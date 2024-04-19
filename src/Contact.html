@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <style>
+        /* Basic styling for the form */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px; /* Increase the font size */
+        }
+
+        form {
+            max-width: 800px; /* Increased width */
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            height: 550px;
+            margin-top: 50px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: calc(100% - 20px); /* Adjusted width */
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        .get-in-touch {
+            text-align: left;
+            font-size: 28px; 
+            margin-bottom: 5px; 
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            padding: 5px 10px; /* Adjusted padding */
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px; /* Decreased font size */
+            position: absolute;
+            bottom: 10px;
+            left: 20px; /* Adjusted left position */
+        }
+
+        button:hover {
+            background-color: gray;
+        }
+
+        header {
+            background-color: #d8d8d8; /* Gray background color */
+            padding: 20px 0; /* Add padding */
+            text-align: left; /* Center align text */
+            color: white; /* Text color */
+            font-family: Arial, sans-serif; /* Font family */
+        }
+
+        nav {
+            display: inline-block; 
+        }
+
+        nav a {
+            color: black; 
+            text-decoration: none; 
+            margin: 0 10px; 
+        }
+
+        .name-email-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .name-label {
+            width: calc(50% - 5px); /* 50% width with 5px spacing */
+            float: left; /* Align left */
+            margin-top: 30px; /* Add margin to the top */
+        }
+
+        .email-label {
+            width: calc(50% - 5px); /* 50% width with 5px spacing */
+            float: right; /* Align right */
+            margin-top: 30px; /* Add margin to the top */
+        }
+    </style>
+</head>
+<body>
+   
+
+    <header>
+        <nav>
+            <a href="index.html" class="text-black mr-4 hover:text-gray-400">Home</a>
+            <a href="category.html" class="text-black mr-4 hover:text-gray-400">Category</a>
+            <a href="contact.html" class="text-black mr-4 hover:text-gray-400">Contact</a>
+            <a href="product.html" class="text-black hover:text-gray-400">Product</a>
+        </nav>
+    </header>
+
+    <form action="#" method="post">
+        <h2 class="get-in-touch">Get in Touch</h2>
+        
+        <div class="name-email-container">
+            <div class="name-label">
+                <label for="name">Your Name (required)</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="email-label">
+                <label for="email">Your Email (required)</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+        </div>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <style>
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 50px;
+            background-color: rgb(218, 213, 213);
+            
+            
+        }
+        
+        .product-container {
+            width: 200px;
+            margin: 0 10px; /* Adjust the margin on both sides */
+            margin-bottom: 10px;
+            padding: 10px;
+            text-align: center;
+            
+        }
+        
+        .product-container img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        
+        .product-info {
+            font-size: 14px;
+            text-align: left;
+        }
+        
+        .product-name {
+            font-weight: bold;
+        }
+        
+        .product-des {
+            font-weight: thin;
+        }
+        
+        .product-price {
+            color: green;
+        }
+        header {
+            background-color: #d8d8d8; /* Gray background color */
+            padding: 20px 0; /* Add padding */
+            text-align: left; /* Center align text */
+            color: white; /* Text color */
+            font-family: Arial, sans-serif; /* Font family */
+        }
+
+        /* Styles for the navigation links */
+        nav {
+            display: inline-block; /* Display as inline block */
+        }
+
+        nav a {
+            color: black; /* Link color */
+            text-decoration: none; /* Remove underline */
+            margin: 0 10px; /* Add margin between links */
+        margin: 0 10px; /* Add margin between links */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <a href="index.html" class="text-black mr-4 hover:text-gray-400">Home</a>
+            <a href="category.html" class="text-black mr-4 hover:text-gray-400">Category</a>
+            <a href="contact.html" class="text-black mr-4 hover:text-gray-400">Contact</a>
+            <a href="product.html" class="text-black hover:text-gray-400">Product</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="product-container">
+            <img src="https://img.fragrancex.com/images/products/sku/small/62349w.webp" alt="Product 1">
+            <div class="product-info">
+                <div class="product-name">Boss Femme</div>
+                <div class="product-des">Product 1</div>
+                <div class="product-price">$20.00</div>
+            </div>
+        </div>
+        <div class="product-container">
+            <img src="https://img.fragrancex.com/images/products/sku/small/71902w.webp" alt="Product 2">
+            <div class="product-info">
+                <div class="product-name">Black Opium</div>
+                <div class="product-des">Rive Gauche</div>
+                <div class="product-price">$25.00</div>
+            </div>
+        </div>
+        <div class="product-container">
+            <img src="https://img.fragrancex.com/images/products/sku/small/73792w.webp" alt="Product 3">
+            <div class="product-info">
+                <div class="product-name">Mon Paris</div>
+                <div class="product-des">Rive Gauche</div>
+                <div class="product-price">$30.00</div>
+            </div>
+        </div>
+        <div class="product-container">
+            <img src="https://img.fragrancex.com/images/products/sku/small/60466w.webp" alt="Product 4">
+            <div class="product-info">
+                <div class="product-name">cinema</div>
+                <div class="product-des">Rive Gauche</div>
+                <div class="product-price">$35.00</div>
+            </div>
+        </div>
+        <div class="product-container">
+            <img src="https://img.fragrancex.com/images/products/sku/small/1110w.webp" alt="Product 5">
+            <div class="product-info">
+                <div class="product-name">Rive Gauche</div>
+                <div class="product-des">Rive Gauche</div>
+                <div class="product-price">$40.00</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
